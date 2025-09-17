@@ -1,0 +1,27 @@
+image: node:16
+
+stages:
+  - build
+  - deploy
+
+variables:
+  CI: "false"
+
+cache:
+  paths:
+    - node_modules/
+
+build:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - build/
+
+deploy:
+  stage: deploy
+  script:
+    - npm install -g netlify-cli
+    - netlify deploy --auth $NETLIFY_AUTH_TOKEN --site $NETLIFY_PRODUCTION_SITE_ID --dir=build --prod

@@ -1,0 +1,173 @@
+.player-overview {  /* c2 */
+    position: relative; /* Make sure it's relative so the button positions correctly */
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    width: 80%; /* Adjust based on your UI */
+    max-height: 80vh;
+    overflow-y: auto;
+
+}
+
+/* Header Section */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Player Name & Champion */
+.player-header {
+    display: flex;
+    align-items: center;
+}
+
+.champion-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-right: 15px;
+}
+
+.player-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.champion-name {
+    font-size: 16px;
+    color: gray;
+}
+
+/* Rank Section */
+.player-rank {
+    display: flex;
+    align-items: center;
+}
+
+.rank-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.rank-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+/* Key Stats Section */
+.key-stats-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.stat-box { /* c1 */
+    text-align: center;
+    padding: 15px;
+    width: 160px;
+    background-color: #292929;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.stat-box h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff6700;
+}
+
+.stat-box p {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 25px;
+    border-bottom: 2px solid #333;
+}
+
+.nav-tabs button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-tabs button:hover {
+    color: white;
+}
+
+.active-tab {
+    color: white;
+    border-bottom: 3px solid #ff6700;
+}
+
+
+.graphs-container { /* c3 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    width:95%;
+    margin-top: 30px;
+}
+
+.graph-box {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin: 20px 0; /* Adds spacing above and below each graph */
+}
+
+.graph-title {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.close-button:hover {
+    transform: scale(1.2);
+}
+
+/* Active Tab Styling */
+.nav-tabs button.active-tab {
+    color: white;
+    border-bottom: 3px solid #ff6700; /* Highlight with an orange underline */
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+/* Optional: Add slight background change on active */
+.nav-tabs button.active-tab:hover {
+    background-color: rgba(255, 103, 0, 0.1); /* Light orange background on hover */
+}

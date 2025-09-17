@@ -1,0 +1,125 @@
+const matchStyles = {
+    container: {
+      padding: '20px',
+      backgroundColor: '#121212',
+      minHeight: '100vh',
+    },
+    pageHeader: {
+      color: 'white',
+      textAlign: 'center',
+      marginBottom: '30px',
+    },
+    card: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'stretch',
+      backgroundColor: '#1e1e2e',
+      borderRadius: '10px',
+      margin: '10px auto',
+      width: '80%',
+      boxShadow: '0 4px 6px rgba(0, 0, 0, 0.3)',
+      overflow: 'hidden',
+      cursor: 'pointer',
+    },
+    matchContent: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      gap: '15px',
+      width: '100%',
+    },
+    leftSection: {
+      flex: 1,
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: '10px',
+    },
+    rightSection: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '10px',
+      minWidth: '150px',
+      justifyContent: 'space-between',
+    },
+    matchRow: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: '20px',
+    },
+    championRow: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '10px',
+    },
+    championIcon: {
+      width: '50px',
+      height: '50px',
+      border: '2px solid white',
+    },
+    items: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '5px',
+      maxWidth: '100px',
+      justifyContent: 'center',
+    },
+    itemIcon: {
+      width: '30px',
+      height: '30px',
+      borderRadius: '5px',
+    },
+    statsRow: {
+      display: 'flex',
+      flexDirection: 'row',
+      textAlign: 'left',
+      gap: '5px',
+    },
+    teamDisplay: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+      gap: '10px',
+      padding: '10px',
+      backgroundColor: '#1e1e2e',
+      borderRadius: '5px',
+    },
+    team: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '5px',
+    },
+    teamBarBlue: {
+      width: '5px',
+      height: '40px',
+      backgroundColor: '#00aaff',
+      borderRadius: '3px',
+    },
+    teamBarRed: {
+      width: '5px',
+      height: '40px',
+      backgroundColor: '#ff4d4d',
+      borderRadius: '3px',
+    },
+    victoryBar: {
+      width: '5px',
+      height: '50px',
+      borderRadius: '3px',
+      marginRight: '5px',
+    },
+    teamIcons: {
+      display: 'flex',
+      gap: '5px',
+    },
+    teamIcon: {
+      width: '30px',
+      height: '30px',
+      borderRadius: '50%',
+      border: '1px solid white',
+    },
+  };
+  
+export default matchStyles;
+  

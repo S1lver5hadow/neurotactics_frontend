@@ -1,0 +1,30 @@
+.win-bar-container {
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.win-bar-background {
+    width: 100%;
+    height: 20px;
+    background-color: #2a2a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+.win-bar-a, .win-bar-b {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  
